@@ -25,17 +25,17 @@ namespace SparkleShare {
 
     public class SparkleUI {
 
+        public static string AssetsPath = Defines.INSTALL_DIR;
+
         public SparkleStatusIcon StatusIcon;
         public SparkleEventLog EventLog;
         public SparkleBubbles Bubbles;
         public SparkleSetup Setup;
         public SparkleAbout About;
 
-        public static string AssetsPath = Defines.INSTALL_DIR;
-
         private Gtk.Application application;
 
-        // TODO: port sparkleshare.in
+
         public SparkleUI ()
         {
             application = new Gtk.Application ("org.sparkleshare.sparkleshare", 0);
